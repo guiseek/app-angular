@@ -1,0 +1,15 @@
+<p>products works!</p>
+
+
+<h1>{{ title }}</h1>
+<table>
+	<tr
+	*ngFor="let product of service.products$ | async"
+	>
+		<td>{{product.id}}</td>
+		<td>{{product.title}}</td>
+		<td>
+			<button>Abrir</button>
+		</td>
+	</tr>
+</table>

@@ -1,0 +1,27 @@
+<p>contact works!</p>
+
+<p>{{ dataDeHoje | date:"long" }}</p>
+
+<p>{{ '2000000' | currency }}</p>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+	<label>
+		Email
+		<input
+			type="email"
+			name="email"
+			formControlName="email"
+		/>
+	</label>
+
+	<output *ngIf="form.invalid">
+		Formulário inválido
+	</output>
+
+	<button>Enviar</button>
+</form>
+
+<pre>{{ form.controls.email.errors | json }}</pre>
+<pre>
+	{{ form.value | json }}
+</pre>
