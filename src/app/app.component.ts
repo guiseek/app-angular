@@ -16,6 +16,10 @@ export class AppComponent {
       path: '/'
     },
     {
+      path: '/dashboard',
+      label: 'Dashboard'
+    },
+    {
       label: 'Produtos',
       path: '/produtos'
     },{

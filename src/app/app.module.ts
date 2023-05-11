@@ -15,7 +15,17 @@ import {MatToolbarModule} from '@angular/material/toolbar'
 import {MatButtonModule} from '@angular/material/button'
 import {MatIconModule} from '@angular/material/icon'
 import {MatListModule} from '@angular/material/list'
-import {LayoutModule} from '@angular/cdk/layout'
+import {LayoutModule} from '@angular/cdk/layout';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
+import { TableComponent } from './table/table.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+import { CartComponent } from './cart/cart.component';
+import { DragDropModule } from '@angular/cdk/drag-drop'
 
 @NgModule({
   declarations: [
@@ -23,6 +33,9 @@ import {LayoutModule} from '@angular/cdk/layout'
     HomeComponent,
     ContactComponent,
     ProductsComponent,
+    DashboardComponent,
+    TableComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +49,13 @@ import {LayoutModule} from '@angular/cdk/layout'
     HttpClientModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    DragDropModule,
   ],
   providers: [ProductsService],
   bootstrap: [AppComponent],
