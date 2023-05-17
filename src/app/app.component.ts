@@ -26,6 +26,14 @@ export class AppComponent {
       label: 'Contato',
       path: '/contato'
     },
+    {
+      label: 'Carrinho',
+      path: '/carrinho'
+    },
+    {
+      label: 'Checkout',
+      path: '/checkout'
+    }
   ]
 
   private _mobileQueryListener: () => void;

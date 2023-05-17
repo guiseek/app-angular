@@ -4,6 +4,8 @@ import {HomeComponent} from './home/home.component'
 import {ProductsComponent} from './products/products.component'
 import {ContactComponent} from './contact/contact.component'
 import { DashboardComponent } from './dashboard/dashboard.component'
+import { CartComponent } from './cart/cart.component'
+import { TableComponent } from './table/table.component'
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path: 'contato',
     component: ContactComponent,
+  },
+  {
+    path: 'carrinho',
+    component: CartComponent,
+  },
+  {
+    path: 'checkout',
+    component: TableComponent,
   },
 ]
 
